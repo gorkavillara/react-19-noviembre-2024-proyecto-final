@@ -32,7 +32,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <input
             ref={usernameRef}
-            type="email"
+            type="text"
             placeholder="Tu nombre de usuario"
             min={3}
             max={20}
