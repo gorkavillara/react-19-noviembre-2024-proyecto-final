@@ -5,6 +5,8 @@ import axios from "axios"
 
 interface UserContextType {
   users: User[]
+  loading: boolean
+  error: string | null
 }
 
 export const UserContext = createContext<UserContextType>(null!)

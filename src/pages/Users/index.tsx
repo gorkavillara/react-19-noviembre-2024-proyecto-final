@@ -1,14 +1,14 @@
 import { use } from "react"
-import axios from "axios"
+// import axios from "axios"
 import { UserContext } from "../../contexts/UserContextProvider"
 
-const token = localStorage.getItem("authToken")
-const apiInstance = axios.create({
-  baseURL: "https://api.ejemplo.com",
-  headers: {
-    Authorization: `Bearer ${token}`,
-  },
-})
+// const token = localStorage.getItem("authToken")
+// const apiInstance = axios.create({
+//   baseURL: "https://api.ejemplo.com",
+//   headers: {
+//     Authorization: `Bearer ${token}`,
+//   },
+// })
 
 const Users = () => {
   // Obtenemos los usuarios del contexto
