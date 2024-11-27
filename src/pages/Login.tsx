@@ -2,7 +2,7 @@ import { useActionState, useRef } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
-const baseUrl = "https://chargers.loca.lt"
+const baseUrl = "https://4e0a-88-10-218-164.ngrok-free.app"
 const appName = import.meta.env.VITE_NOMBRE_APP
 
 const Login = () => {

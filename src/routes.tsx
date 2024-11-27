@@ -3,6 +3,7 @@ import Login from "./pages/Login"
 import Layout from "./layouts/Layout"
 import Users from "./pages/Users"
 import Chargers from "./pages/Chargers"
+import NewUser from "./pages/Users/new"
 
 export const routes: RouteObject[] = [
   {
@@ -12,6 +13,10 @@ export const routes: RouteObject[] = [
         {
             path: "users",
             element: <Users />
+        },
+        {
+            path: "users/new",
+            element: <NewUser />
         },
         {
             path: "chargers",
