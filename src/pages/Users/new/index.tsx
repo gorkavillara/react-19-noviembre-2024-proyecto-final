@@ -15,6 +15,7 @@ const NewUser = () => {
       console.log({ username, password })
   }
   const [error, formAction] = useActionState(altaUsuario, null)
+  console.error(error)
 
 
   return (
