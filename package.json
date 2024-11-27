@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:staging": "tsc -b && vite build --mode staging",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest"
   },
   "dependencies": {
     "axios": "^1.7.7",
-    "react": "^19.0.0-rc-ed15d500-20241110",
-    "react-dom": "^19.0.0-rc-ed15d500-20241110",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0"
   },
   "devDependencies": {

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
 const baseUrl = "https://chargers.loca.lt"
+const appName = import.meta.env.VITE_NOMBRE_APP
 
 const Login = () => {
   const usernameRef = useRef<HTMLInputElement>(null)
@@ -46,6 +47,7 @@ const Login = () => {
         <br />
         <button type="submit" disabled={isPending}>Login</button>
         {error && <p style={{ color: "red" }}>{error}</p>}
+        <p>Nombre de la app: {appName}</p>
       </form>
     </div>
   )
