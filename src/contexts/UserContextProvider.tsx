@@ -16,6 +16,7 @@ const UserContextProvider = ({ children }: PropsWithChildren) => {
   useEffect(() => {
     setLoading(true)
     axios
+      // .get("http://localhost:3210/api/users")
       .get("https://chargers.loca.lt/api/users")
       .then((res) => setUsers(res.data))
       .catch((error) => setError(error.message))

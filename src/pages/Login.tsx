@@ -2,7 +2,7 @@ import { useActionState, useRef } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
-const baseUrl = "https://0c56-46-25-71-106.ngrok-free.app"
+const baseUrl = "https://chargers.loca.lt"
 
 const Login = () => {
   const usernameRef = useRef<HTMLInputElement>(null)

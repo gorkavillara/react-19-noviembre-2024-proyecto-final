@@ -15,14 +15,14 @@ const Users = () => {
   const { users, loading, error } = use(UserContext)
 
   if (loading) return <span>Cargando...</span>
-  if (error) return <span>Error! {error}</span>
+  if (error) return <span role="error">Error! {error}</span>
 
   return (
     <div>
       <h2>Listado de usuarios</h2>
-      <ul>
+      <ul role="users-list">
         {users.map((user, index) => (
-          <li key={user.id}>
+          <li key={user.id} role="user">
             {index + 1}. {user.username}
           </li>
         ))}
