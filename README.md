@@ -48,5 +48,3 @@ export default tseslint.config({
   },
 })
 ```
-
-Editado con Gpt de gorka
